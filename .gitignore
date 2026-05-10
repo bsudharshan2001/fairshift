@@ -28,3 +28,4 @@ results_*_*.csv
 .DS_Store
 .specstory/
 .cursorindexingignore
+.history/

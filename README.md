@@ -1,4 +1,4 @@
-# fairshift
+# FairShift
 
 **Investigating distribution shift impact on LLM fairness.**
 
