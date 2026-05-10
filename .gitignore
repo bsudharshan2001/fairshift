@@ -1,0 +1,30 @@
+# Local paper materials intentionally excluded from GitHub
+Paper/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Experiment checkpoints and local artifacts
+checkpoint_*.json
+results_*_*.csv
+
+# OS / editor metadata
+.DS_Store
+.specstory/
+.cursorindexingignore
