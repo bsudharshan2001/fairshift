@@ -16,11 +16,23 @@ Using the Folktables ACS dataset, the experiments evaluate three settings: basel
 
 ## Figures
 
-![Pre-ICL model accuracy over time](figures/pre_icl/model_accuracy_over_time_pre_icl.png)
+<p align="center">
+  <img src="figures/readme/experiment_snapshot.png" alt="Experiment snapshot showing aggregate accuracy and unknown-response rates" width="820">
+</p>
 
-![Post-ICL model accuracy over time](figures/post_icl/model_accuracy_over_time_post_icl.png)
+**Experiment snapshot.** Aggregate accuracy and unknown-response rates across the Pre-ICL, Post-ICL, and scaling settings.
 
-![Scaling fairness metrics over time](figures/scaling/fairness_metrics_over_time_scaled.png)
+<p align="center">
+  <img src="figures/readme/accuracy_under_shift.png" alt="Accuracy under temporal and geographic distribution shift" width="920">
+</p>
+
+**Accuracy under shift.** Model accuracy by ACS survey year, grouped by experiment family and averaged across California, Texas, and Michigan.
+
+<p align="center">
+  <img src="figures/readme/fairness_gap_summary.png" alt="Fairness gaps by experimental setting" width="920">
+</p>
+
+**Fairness gaps.** Gender accuracy gap and demographic parity gap by setting. Lower values indicate smaller disparity.
 
 ## Repository Structure
 
@@ -36,7 +48,8 @@ Using the Folktables ACS dataset, the experiments evaluate three settings: basel
 ├── figures/
 │   ├── pre_icl/
 │   ├── post_icl/
-│   └── scaling/
+│   ├── scaling/
+│   └── readme/
 ├── notebooks/
 ├── scripts/
 └── src/fairshift/
@@ -91,17 +104,6 @@ The scripts write outputs under `data/results/`. Running the full experiment sui
 - **Models:** GPT-4o mini, Claude 3 Haiku, Mistral 7B, Gemma 2B/9B/27B.
 - **Prompt target:** Predict whether annual income is above or below $50,000.
 - **Fairness metrics:** Demographic parity, equal opportunity, false positive rate, accuracy by subgroup, and unknown-response rate.
-
-## Citation
-
-```bibtex
-@misc{balaji2024fairshift,
-  title = {Investigating Distribution Shift Impact on LLM Fairness},
-  author = {Balaji, Sudharshan},
-  year = {2024},
-  institution = {University of South Florida}
-}
-```
 
 ## Security Note
 
